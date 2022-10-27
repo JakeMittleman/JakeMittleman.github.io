@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
   FAQ = "FAQ";
   GAMES = "GAMES";
 
-  currTab: string = this.GAMES;
+  currTab: string = this.HOME;
 
   constructor() { }
 
