@@ -1,0 +1,60 @@
+<div class="top-bar-container">
+  <div class="desktop-nav">
+    <div class="nav-button">
+      <a (click)="emitCurrTab('HOME')">
+        <span>Home</span>
+      </a>
+    </div>
+    <div class="nav-button">
+      <a (click)="emitCurrTab('SCHEDULE')">
+        <span>Schedule of Events</span>
+      </a>
+    </div>
+    <div class="nav-button">
+      <a (click)="emitCurrTab('FAQ')">
+        Jewish Wedding FAQ
+      </a>
+    </div>
+    <div class="nav-button">
+      <a (click)="emitCurrTab('GAMES')">
+        <span>Games/Activities</span>
+      </a>
+    </div>
+  </div>
+  <div class="mobile-nav">
+    <button [ngClass]="mobileMenuActive ? 'hamburger hamburger--collapse is-active' : 'hamburger hamburger--collapse'" type="button" (click)="toggleHamburgerMenu()">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </div>
+</div>
+
+<!-- mobile hamburger menu -->
+<div class="mobile-top-bar-container" *ngIf="mobileMenuActive">
+  <div class="mobile-top-bar-button-container">
+    <div class="nav-button">
+      <a (click)="emitCurrTab('HOME')">
+        <span>Home</span>
+      </a>
+    </div>
+    <div class="nav-button">
+      <a (click)="emitCurrTab('SCHEDULE')">
+        <span>Schedule of Events</span>
+      </a>
+    </div>
+    <div class="nav-button">
+      <a (click)="emitCurrTab('FAQ')">
+        Jewish Wedding FAQ
+      </a>
+    </div>
+    <div class="nav-button">
+      <a (click)="emitCurrTab('GAMES')">
+        <span>Games/Activities</span>
+      </a>
+    </div>
+  </div>
+</div>
+  
+  
+  

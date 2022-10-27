@@ -1,0 +1,190 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<div *ngIf="!madLibGenerated" class="form-container">
+    <form [formGroup]="formGroup" class="form needs-validation" novalidate>
+        <div class="questions-container">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="noun1">Noun</span>
+                </div>
+                <input required type="text" class="form-control" placeholder="Noun" aria-label="Noun" aria-describedby="noun1" formControlName="noun1">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="adjective1">Adjective</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Adjective" aria-label="Adjective" aria-describedby="adjective1" formControlName="adjective1">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="emotionalAdverb">Emotional Adverb</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Emotional Adverb" aria-label="emotionalAdverb" aria-describedby="emotionalAdverb" formControlName="emotionalAdverb">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="catchPhrase">Catch Phrase</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Catch Phrase" aria-label="catchPhrase" aria-describedby="catchPhrase" formControlName="catchPhrase">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="emotion1">Emotion</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Emotion" aria-label="emotion1" aria-describedby="emotion1" formControlName="emotion1">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="verb">Past Tense Verb</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Past Tense Verb" aria-label="verb" aria-describedby="verb" formControlName="verb">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="adjective2">Adjective</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Adjective" aria-label="adjective2" aria-describedby="adjective2" formControlName="adjective2">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="verb2">Verb</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Verb" aria-label="verb2" aria-describedby="verb2" formControlName="verb2">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="number">Number</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Number" aria-label="number" aria-describedby="number" formControlName="number">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="bodyPart1">Body Part</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Body Part" aria-label="bodyPart1" aria-describedby="bodyPart1" formControlName="bodyPart1">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="bodyPart2">Body Part</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Body Part" aria-label="bodyPart2" aria-describedby="bodyPart2" formControlName="bodyPart2">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="number2">Number</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Number" aria-label="number2" aria-describedby="number2" formControlName="number2">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="ingActivity">Activity ending in "ing"</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Activity ending in ing" aria-label="ingActivity" aria-describedby="ingActivity" formControlName="ingActivity">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="animal">Animal</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Animal" aria-label="animal" aria-describedby="animal" formControlName="animal">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="adjective3">Adjective</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Adjective" aria-label="adjective3" aria-describedby="adjective3" formControlName="adjective3">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="adjective4">Adjective</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Adjective" aria-label="adjective4" aria-describedby="adjective4" formControlName="adjective4">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="adjective5">Adjective</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Adjective" aria-label="adjective5" aria-describedby="adjective5" formControlName="adjective5">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="bodyPart3">Body Part</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Body Part" aria-label="bodyPart3" aria-describedby="bodyPart3" formControlName="bodyPart3">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="adjective6">Adjective</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Adjective" aria-label="adjective6" aria-describedby="adjective6" formControlName="adjective6" required>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="button" (click)="generateMadLib()">Submit</button>
+    </form>
+</div>
+<div *ngIf="madLibGenerated" class="mad-lib-reveal">
+    <p>When they met, it was like he had been hit by a 
+        <span class="mad-lib-word">{{noun1}}</span>.
+    Everything about her was <span class="mad-lib-word">{{adjective1}}</span>. He <span class="mad-lib-word">{{emotionalAdverb}}</span> walked over to her and
+    said <span class="mad-lib-word">{{catchPhrase}}</span>. She was so <span class="mad-lib-word">{{emotion1}}</span> that she <span class="mad-lib-word">{{verb}}</span>.
+    On their first date he made a <span class="mad-lib-word">{{adjective2}}</span> joke and she couldn't help but <span class="mad-lib-word">{{verb2}}</span>.
+    It wasn't long before they were together for <span class="mad-lib-word">{{number}}</span> years! He just loves her <span class="mad-lib-word">{{bodyPart1}}</span>,
+    and she can't get enough of his <span class="mad-lib-word">{{bodyPart2}}</span>.
+    He secretly wants to have <span class="mad-lib-word">{{number2}}</span> kids and she wants to start <span class="mad-lib-word">{{ingActivity}}</span> as a couple.
+    Also, they agreed to get a pet <span class="mad-lib-word">{{animal}}</span>! Isn't love <span class="mad-lib-word">{{adjective3}}</span>? As time passes, they know they
+    may get <span class="mad-lib-word">{{adjective4}}</span> and <span class="mad-lib-word">{{adjective5}}</span>, but despite that, they will always love each other's
+    <span class="mad-lib-word">{{bodyPart3}}</span>. That, my friends, makes for a <span class="mad-lib-word">{{adjective6}}</span> MARRIAGE!</p>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScl62H2lxgZaF9Se7RbsJGPJZKWz2F8m18aqw1DK_O-xQg4QA/viewform?embedded=true" width="640" height="574" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+
+<!-- When they met, it was like he had been hit by a ___noun____.
+    Everything about her was ____adjective_____. He ____emotional adverb_____ walked over to her and
+said ___catch phrase (short [or not])_____. She was so ___emotion____ that she ____verb(ed)___.
+On their first date he made a ___adjective___ joke and she couldn't help but ___verb____.
+It wasn't long before they were together for ____number____ years! He just loves her ____body part____,
+and she can't get enough of his ____body part____.
+He secretly wants to have ____number____ kids and she wants to start ____activity ending in ing____ as a couple.
+Also, they agreed to get a pet ___animal___! Isn't love ___adjective___? As time passes, they know they
+may get ____adjective____ and ___adjective___, but desipite that, they will always love each-other's
+____body part (multiple)____. That, my friends, makes for a ___adjective___ MARRIAGE! -->
+
+<!-- "noun1": new FormControl(''),
+"adjective1": new FormControl(''),
+"emotionalAdverb": new FormControl(''),
+"catchPhrase": new FormControl(''),
+"emotion1": new FormControl(''),
+"verb": new FormControl(''),
+"adjective2": new FormControl(''),
+"verb2": new FormControl(''),
+"number": new FormControl(''),
+"bodyPart1": new FormControl(''),
+"bodyPart2": new FormControl(''),
+"number2": new FormControl(''),
+"ingActivity": new FormControl(''),
+"animal": new FormControl(''),
+"adjective3": new FormControl(''),
+"adjective4": new FormControl(''),
+"adjective5": new FormControl(''),
+"bodyPart3": new FormControl(''),
+"adjective6": new FormControl('') -->

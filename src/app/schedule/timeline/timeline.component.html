@@ -1,0 +1,22 @@
+<div class="timeline-master-container">
+    <div class="side-data-container">
+        <div *ngFor="let dataPoint of leftSideData; let i = index" class="data-point">
+            <div [innerText]="dataPoint">
+            </div>
+        </div>
+    </div>
+    <div class="timeline-container">
+        <div *ngFor="let x of range(timelineLength); let i = index" class="point-line-pair">
+            <div class="event-point" [ngStyle]="{'background-image': 'url(../../../assets/icons/' + icons[i].toString() + '.svg)'}">
+            </div>
+            <div *ngIf="i != timelineLength - 1" class="timeline-line">
+            </div>
+        </div>
+    </div>
+    <div class="side-data-container">
+        <div *ngFor="let dataPoint of rightSideData; let i = index" class="data-point">
+            <div [innerText]="dataPoint">
+            </div>
+        </div>
+    </div>
+</div>

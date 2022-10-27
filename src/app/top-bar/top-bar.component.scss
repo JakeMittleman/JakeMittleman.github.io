@@ -1,0 +1,72 @@
+@import '~hamburgers/_sass/hamburgers/hamburgers.scss';
+
+.top-bar-container {
+  background-color: #e2aedb;
+
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+
+  .nav-button {
+    padding: 8px 20px 8px 20px;
+
+    font-family: 'Reem Kufi Fun', sans-serif;
+    font-size: 24px;
+    color: #4d1c47;
+    cursor: pointer;
+  }
+
+  .desktop-nav {
+    display: flex;
+    flex-flow: row;
+    // mobile
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .mobile-nav {
+    // desktop
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    width: 100%;
+
+    @media screen and (min-width: 769px) {
+      display: none;
+    }
+  }
+}
+
+.mobile-top-bar-container {
+  position: absolute;
+  z-index: 2;
+
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  width: 100%;
+
+  @media screen and (min-width: 769px) {
+    display: none;
+  }
+
+  .mobile-top-bar-button-container {
+    background-color: #e2aedb;
+
+    display: flex;
+    flex-flow: column;
+    align-content: flex-end;
+  }
+
+  .nav-button {
+    padding: 8px 20px 8px 20px;
+
+    font-family: 'Reem Kufi Fun', sans-serif;
+    font-size: 24px;
+    color: #4d1c47;
+    cursor: pointer;
+  }
+}

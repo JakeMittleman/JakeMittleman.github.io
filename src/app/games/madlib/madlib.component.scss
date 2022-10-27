@@ -1,0 +1,22 @@
+.form-container {
+    padding: 1rem;
+
+    .form {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+    }
+}
+
+.mad-lib-reveal {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 2rem 1.5rem;
+
+    .mad-lib-word {
+        font-style: italic;
+        font-weight: bold;
+    }
+}
+

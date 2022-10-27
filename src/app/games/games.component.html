@@ -1,0 +1,15 @@
+<div class="games-app-container">
+    <h1>Play a game!</h1>
+    <div *ngIf="currentGame == ''" class="games-button-container">
+        <button (click)="switchGame(GUESS_WHO)">Guess Who?</button>
+        <button (click)="switchGame(PHOTO)">Photo Hunt!</button>
+        <button (click)="switchGame(MAD_LIBS)">Mad Libs</button>
+    </div>
+    <div (click)="clearGameSelection()" class="back-button" *ngIf="currentGame != ''">
+    </div>
+    <div class="game-container">
+        <app-guess-who *ngIf="currentGame == GUESS_WHO"></app-guess-who>
+        <app-photo-hunt *ngIf="currentGame == PHOTO"></app-photo-hunt>
+        <app-madlib *ngIf="currentGame == MAD_LIBS"></app-madlib>
+    </div>
+</div>

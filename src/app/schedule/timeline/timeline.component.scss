@@ -1,0 +1,56 @@
+.timeline-master-container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    width: 100%;
+
+    .side-data-container {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        padding: 0.7rem 0 0 0;
+        font-family: 'Reem Kufi Fun', sans-serif;
+
+        .data-point {
+            display: flex;
+            justify-content: flex-start;
+            height: 5.9rem;
+            padding: 0 0 0 1rem;
+        }
+
+        .data-point-left {
+            display: flex;
+            justify-content: flex-start;
+            height: 5.9rem;
+            padding: 0 1rem 0 0;
+        }
+    }
+
+    .point-line-pair {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 100%;
+
+        .event-point {
+            background-color: #e2aedb;
+            border: .2rem;
+            border-style: solid;
+            border-color: #4d1c47;
+            border-radius: 50%;
+            width: 4.5rem;
+            height: 4.5rem;
+
+            background-size: 80%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        .timeline-line {
+            width: .2rem;
+            height: 3rem;
+            background-color: #4d1c47;
+        }
+    }
+}
+
