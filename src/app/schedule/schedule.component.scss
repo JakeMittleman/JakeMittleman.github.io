@@ -1,4 +1,16 @@
 .timeline-app {
-    padding: 100px 0 0 0;
     height: 100%;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    background: #ffe1fb;
+
+    .events-container {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
 }

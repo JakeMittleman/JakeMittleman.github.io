@@ -1,15 +1,22 @@
 <div class="photo-hunt-container">
-    <p>Hey there, go on a scavenger hunt and take pictures of the things we've listed below. Then upload your pictures to google drive!</p>
+    <div id="photo-hunt-instructions">
+        Hey there, go on a scavenger hunt and take pictures of the things we've listed below. Then upload your pictures to google drive!
+    </div>
 
     <div class="checklist-container">
-        <div class="checklist-item">
+        <div *ngFor="let item of PHOTO_HUNT_ITEMS" class="checklist-item">
+            <input class="form-check-input" type="checkbox" value="" [id]="formatListItem(item)">
+            <label class="form-check-label" [for]="formatListItem(item)" [innerText]="item">
+            </label>
+        </div>
+        <!-- <div class="checklist-item">
             <input class="form-check-input" type="checkbox" value="" id="theBride">
             <label class="form-check-label" for="theBride">
                 The Bride
             </label>
-        </div>
+        </div> -->
 
-        <div class="checklist-item">
+        <!-- <div class="checklist-item">
             <input class="form-check-input" type="checkbox" value="" id="theGroom">
             <label class="form-check-label" for="theGroom">
                 The Groom
@@ -98,8 +105,7 @@
             <label class="form-check-label" for="baby">
                 A baby
             </label>
-        </div>
+        </div> -->
     </div>
+    <a href="https://photos.google.com/share/AF1QipNiySNtfglbbBKm89AEseJV9QoO8k0jgArUHF1eD4rXurFK9TFTvvwyyxrr4N6pgQ?pli=1&key=Zi1UeWU4SnpESVlKcGc2bjlYcnloSHJPaWxET3BB">CLICK HERE TO UPLOAD YOUR FILES</a>
 </div>
-
-<a href="https://photos.google.com/share/AF1QipNiySNtfglbbBKm89AEseJV9QoO8k0jgArUHF1eD4rXurFK9TFTvvwyyxrr4N6pgQ?pli=1&key=Zi1UeWU4SnpESVlKcGc2bjlYcnloSHJPaWxET3BB">CLICK HERE TO UPLOAD YOUR FILES</a>

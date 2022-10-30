@@ -11,7 +11,7 @@ export class GamesComponent implements OnInit {
   PHOTO = "PHOTO";
   MAD_LIBS = "MAD";
 
-  currentGame: string = "";
+  currentGame: string = "PHOTO";
 
   constructor() { }
 

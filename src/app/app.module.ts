@@ -9,7 +9,6 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { GamesComponent } from './games/games.component';
 import { FaqComponent } from './faq/faq.component';
-import { TimelineComponent } from './schedule/timeline/timeline.component';
 import { GuessWhoComponent } from './games/guess-who/guess-who.component';
 import { MadlibComponent } from './games/madlib/madlib.component';
 import { PhotoHuntComponent } from './games/photo-hunt/photo-hunt.component';
@@ -22,7 +21,6 @@ import { PhotoHuntComponent } from './games/photo-hunt/photo-hunt.component';
     ScheduleComponent,
     GamesComponent,
     FaqComponent,
-    TimelineComponent,
     GuessWhoComponent,
     MadlibComponent,
     PhotoHuntComponent
