@@ -3,9 +3,11 @@
         Schedule of Events
     </div>
     <div class="events-container">
-        <p class="single-event">6:30 - Rehearsal</p>
-        <p class="single-event">6:30 - Rehearsal</p>
-        <p class="single-event">6:30 - Rehearsal</p>
-        <p class="single-event">6:30 - Rehearsal</p>
+        <div *ngFor="let event of EVENTS; let index = index" class="event">
+            {{event}}
+            <div *ngIf="index == 1" class="notes">{{WEDDING_CEREMONY_NOTES}}</div>
+            <div *ngIf="index == 5" class="notes">{{BAR_CLOSE_NOTES}}</div>
+            <div *ngIf="index == 6" class="notes">{{PUMPKIN_NOTES}}</div>
+        </div>
     </div>
 </div>  

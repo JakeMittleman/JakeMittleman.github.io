@@ -21,7 +21,7 @@ export class PhotoHuntComponent implements OnInit {
     "Good friends",
     "A happy family",
     "The send off",
-    "A baby",
+    "A little kid",
     "The bride's grandparent",
     "A speech",
     "T-Rex selfie",
@@ -29,7 +29,11 @@ export class PhotoHuntComponent implements OnInit {
     "The horah",
     "The chair lift",
     "Plate of food",
-    ""
+    "A drawing of the bride",
+    "A drawing of the groom",
+    "A cute older couple",
+    "The mother of the bride crying",
+    "The maid of honor"
   ]
 
   constructor() { }

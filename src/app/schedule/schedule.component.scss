@@ -7,10 +7,41 @@
 
     background: #ffe1fb;
 
+    padding: 1rem 0 0 0;
+
+    .schedule-header {
+        font-size: 2rem;
+        font-family: 'Reem Kufi Fun', sans-serif;
+        color: #4d1c47;
+    }
+
     .events-container {
         display: flex;
         flex-flow: column;
         align-items: center;
         justify-content: space-evenly;
+
+        height: 80%;
+
+        .event {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            text-align: center;
+
+            font-family: 'Roboto', sans-serif;
+            color: #4d1c47;
+
+            padding: 1rem 0 0 0;
+
+            .notes {
+                width: 80%;
+                font-size: 0.9rem;
+                padding: 0.5rem 0 1rem 0;
+
+                font-family: 'Roboto', sans-serif;
+                color: #4d1c47;
+            }
+        }
     }
 }

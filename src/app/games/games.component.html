@@ -1,11 +1,14 @@
 <div class="games-app-container">
-    <div class="games-header">Play a Game!</div>
+    <div class="games-header">
+        <div (click)="clearGameSelection()" class="back-button" *ngIf="currentGame != ''"></div>
+        <div *ngIf="currentGame == ''">
+            Play a Game!
+        </div>
+    </div>
     <div *ngIf="currentGame == ''" class="games-button-container">
         <button (click)="switchGame(GUESS_WHO)">Guess Who?</button>
         <button (click)="switchGame(PHOTO)">Photo Hunt!</button>
         <button (click)="switchGame(MAD_LIBS)">Mad Libs</button>
-    </div>
-    <div (click)="clearGameSelection()" class="back-button" *ngIf="currentGame != ''">
     </div>
     <div class="game-container">
         <app-guess-who *ngIf="currentGame == GUESS_WHO"></app-guess-who>
