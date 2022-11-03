@@ -12,6 +12,9 @@ import { FaqComponent } from './faq/faq.component';
 import { GuessWhoComponent } from './games/guess-who/guess-who.component';
 import { MadlibComponent } from './games/madlib/madlib.component';
 import { PhotoHuntComponent } from './games/photo-hunt/photo-hunt.component';
+import { WeddingPartyAboutComponent } from './wedding-party-about/wedding-party-about.component';
+import { NgxSmartModalModule } from 'ngx-smart-modal';
+import { SongLyricsComponent } from './song-lyrics/song-lyrics.component';
 
 @NgModule({
   declarations: [
@@ -23,13 +26,16 @@ import { PhotoHuntComponent } from './games/photo-hunt/photo-hunt.component';
     FaqComponent,
     GuessWhoComponent,
     MadlibComponent,
-    PhotoHuntComponent
+    PhotoHuntComponent,
+    WeddingPartyAboutComponent,
+    SongLyricsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxSmartModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

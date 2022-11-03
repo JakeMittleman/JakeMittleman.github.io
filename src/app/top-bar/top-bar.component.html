@@ -20,6 +20,16 @@
         <span>Games/Activities</span>
       </a>
     </div>
+    <div class="nav-button">
+      <a (click)="emitCurrTab('CREW')">
+        <span>About the I-Do Crew</span>
+      </a>
+    </div>
+    <div class="nav-button">
+      <a (click)="emitCurrTab('LYRICS')">
+        <span>Song Lyrics</span>
+      </a>
+    </div>
   </div>
   <div class="mobile-nav">
     <button [ngClass]="mobileMenuActive ? 'hamburger hamburger--collapse is-active' : 'hamburger hamburger--collapse'" type="button" (click)="toggleHamburgerMenu()">
@@ -51,6 +61,16 @@
     <div class="nav-button">
       <a (click)="emitCurrTab('GAMES')">
         <span>Games/Activities</span>
+      </a>
+    </div>
+    <div class="nav-button">
+      <a (click)="emitCurrTab('CREW')">
+        <span>About the I-Do Crew</span>
+      </a>
+    </div>
+    <div class="nav-button">
+      <a (click)="emitCurrTab('LYRICS')">
+        <span>Song Lyrics</span>
       </a>
     </div>
   </div>

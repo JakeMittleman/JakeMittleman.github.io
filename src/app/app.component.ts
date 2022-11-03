@@ -12,8 +12,10 @@ export class AppComponent implements OnInit {
   SCHEDULE = "SCHEDULE";
   FAQ = "FAQ";
   GAMES = "GAMES";
+  CREW = "CREW";
+  LYRICS = "LYRICS";
 
-  currTab: string = this.HOME;
+  currTab: string = this.CREW;
 
   constructor() { }
 
