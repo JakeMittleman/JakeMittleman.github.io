@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   CREW = "CREW";
   LYRICS = "LYRICS";
 
-  currTab: string = this.CREW;
+  currTab: string = this.HOME;
 
   constructor() { }
 
